@@ -1,0 +1,162 @@
+.Home_Page {
+  width: 1920px;
+  height: 700px;
+}
+.Meun_bar {
+  width: 1170px;
+  height: 40px;
+  flex-shrink: 0;
+  padding-left: 39px;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.menu {
+  width: 533px;
+  height: 17px;
+  flex-shrink: 0;
+  padding-left: 500px;
+  gap: 40px;
+}
+.menu_text,
+.menu_text1 {
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.menu_text {
+  color: #f25822;
+  font-family: Gilroy-SemiBold;
+}
+.menu_text1 {
+  color: #000;
+  font-family: Gilroy-Medium;
+}
+
+.Features_icon {
+  width: 6px;
+  height: 3px;
+  flex-shrink: 0;
+  color: #000000;
+}
+
+.Logo {
+  width: 137px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.logo_img {
+  width: 35px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.logo_text {
+  width: 88px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+}
+.logo_text_Grow,
+.logo_text_Be {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logo_text_Grow {
+  color: #000000;
+  font-family: Gilroy-Bold;
+}
+.logo_text_Be {
+  color: #f25822;
+  font-family: Gilroy-Bold;
+}
+
+.menu_img {
+  display: flex;
+}
+.Home_meta {
+  width: 522px;
+  height: 374px;
+  flex-shrink: 0;
+}
+.title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sub_title {
+  width: 466px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #888;
+  font-family: Gilroy-Medium;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Button_meta {
+  width: 302px;
+  height: 50px;
+  flex-shrink: 0;
+  gap: 40px;
+  display: flex;
+}
+.video {
+  width: 90px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #aaaaaa;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Button {
+  width: 140px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #f25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+}
+.Button_text {
+  color: #ffffff;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.menu_umage {
+  width: 610.735px;
+  height: 372.904px;
+  flex-shrink: 0;
+}
+.Image {
+  width: 544.814px;
+  height: 374.843px;
+  flex-shrink: 0;
+}
+
+.Brand {
+  width: 1920px;
+  height: 243px;
+  flex-shrink: 0;
+  gap: 40px;
+  display: flex;
+}
+.Brand_logo {
+  width: 160px;
+  height: 50px;
+  flex-shrink: 0;
+}
