@@ -1,22 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid rebeccapurple;*/
+}
+
 .Home_Page {
-  width: 1920px;
-  height: 700px;
+  max-width: 1920px;
+  min-height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
 }
 .Meun_bar {
   width: 1170px;
   height: 40px;
   flex-shrink: 0;
-  padding-left: 39px;
-  gap: 40px;
+  gap: 346px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+}
+
+.Menu {
+  display: flex;
+  align-items: flex-start;
 }
 .menu {
-  width: 533px;
-  height: 17px;
+  width: 687px;
+  height: 40px;
   flex-shrink: 0;
-  padding-left: 500px;
-  gap: 40px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
 }
 .menu_text,
 .menu_text1 {
@@ -45,8 +70,12 @@
 .Logo {
   width: 137px;
   height: 40px;
-  flex-shrink: 0;
+  gap: 14px;
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .logo_img {
@@ -77,12 +106,28 @@
 }
 
 .menu_img {
+  width: 543px;
+  height: 374px;
+  flex-shrink: 0;
+  gap: 41px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .Home_meta {
   width: 522px;
   height: 374px;
   flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0px 0px 152px 21px;
 }
 .title {
   color: #000;
@@ -91,6 +136,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 143px 0px 65px 21px;
 }
 .sub_title {
   width: 466px;
@@ -102,15 +148,32 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0px 56px 87px 21px;
 }
 .Button_meta {
   width: 302px;
   height: 50px;
   flex-shrink: 0;
-  gap: 40px;
+  gap: 27px;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0px 56px 87px 21px;
 }
 .video {
+  width: 135px;
+  height: 30px;
+  flex-shrink: 0;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.video_text {
   width: 90px;
   height: 19px;
   flex-shrink: 0;
@@ -121,6 +184,11 @@
   font-weight: 400;
   line-height: normal;
 }
+.vidio_icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
 .Button {
   width: 140px;
   height: 50px;
@@ -128,9 +196,9 @@
   border-radius: 50px;
   background: #f25822;
   box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  color: #ffffff;
 }
 .Button_text {
-  color: #ffffff;
   font-family: Gilroy-Bold;
   font-size: 15px;
   font-style: normal;
@@ -149,14 +217,206 @@
 }
 
 .Brand {
-  width: 1920px;
-  height: 243px;
+  max-width: 1920px;
+  min-height: 25vh;
   flex-shrink: 0;
   gap: 40px;
   display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
 }
 .Brand_logo {
   width: 160px;
   height: 50px;
   flex-shrink: 0;
+}
+
+.Features {
+  width: 1915px;
+  height: 491px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.Features1,
+.Features2,
+.Features3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Features1,
+.Features3 {
+  width: 310px;
+  height: 226px;
+}
+
+.Features2 {
+  justify-content: normal;
+  width: 370px;
+  height: 291px;
+}
+
+.h1_Features,
+.h1_Features2,
+.h1_title {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.h1_Features,
+.h1_Features2 {
+  font-size: 24px;
+}
+
+.h1_title {
+  font-size: 45px;
+}
+
+.h1_Features2 {
+  margin: 20px 0px 0px 30px;
+}
+
+.img_Features,
+.img_Features2 {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.img_Features2 {
+  margin: 35px 0px 0px 30px;
+}
+
+.p_Features,
+.p_Features2,
+.p_Services,
+.p_title {
+  flex-shrink: 0;
+  color: #666;
+  font-family: Gilroy-Regular;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+}
+
+.p_title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.p_Features,
+.p_Features2 {
+  width: 310px;
+  height: 42px;
+  font-size: 15px;
+}
+
+.p_Services {
+  width: 310px;
+  height: 63px;
+  font-size: 15px;
+}
+
+.p_Features2 {
+  margin: 20px 0px 0px 30px;
+}
+
+.Button_Features,
+.Button_Features2 {
+  color: #000;
+  font-family: Gilroy-Bold;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 16.5px */
+}
+
+.Button_Features2 {
+  margin: 20px 0px 0px 30px;
+}
+
+.item-a {
+  grid-area: titl;
+}
+.item-b {
+  grid-area: services1;
+}
+.item-c {
+  grid-area: services2;
+}
+.item-d {
+  grid-area: services3;
+}
+
+.Services {
+  width: 1920px;
+  height: 919px;
+  flex-shrink: 0;
+  background: #fafafa;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-areas:
+      'titl titl titl'
+      'services1 services2 services3';
+  justify-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.Secation_title {
+  width: 682px;
+  height: 123px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Services1 {
+  width: 370px;
+  height: 549px;
+  flex-shrink: 0;
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+  width: 370px;
+  height: 270px;
+  flex-shrink: 0;
+  background: #666;
+  display: grid;
+  gap: 25px;
+  justify-items: center;
+}
+
+.img_illustration,
+.img_illustration2,
+.img_illustration3 {
+  width: 385px;
+  height: 289px;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.img_ServicesButton {
+  width: 4px;
+  height: 8px;
+  flex-shrink: 0;
+  background: transparent;
 }
