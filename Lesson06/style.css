@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid rebeccapurple;*/
+  /*border: 1px solid rebeccapurple;*/
 }
 
 .desktop_index {
@@ -370,4 +370,133 @@
   flex-shrink: 0;
   color: #ff6a6a;
   border-color: #ff6a6a;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desktop_index {
+    width: 768px;
+    height: 2976px;
+    background: #ffffff;
+  }
+
+  .Header {
+    width: 768px;
+    height: 74px;
+  }
+
+  .section_header {
+    width: 768px;
+    height: 367.567px;
+  }
+
+  .img_section {
+    width: 386px;
+    height: 368px;
+  }
+
+  .logo_header {
+    width: 44px;
+    height: 38px;
+  }
+
+  .img_logo_header {
+    width: 26.002px;
+    height: 26.792px;
+  }
+
+  .img_header {
+    width: 26.002px;
+    height: 26.792px;
+  }
+
+  .Button_header {
+    width: 158.996px;
+    height: 29px;
+    flex-shrink: 0;
+    background: transparent;
+  }
+
+  .text_section {
+    width: 311px;
+    height: 70px;
+  }
+
+  .h1_text {
+    font-size: 40px;
+  }
+
+  .h2_text1,
+  .h2_text2 {
+    font-size: 20px;
+  }
+
+  .Product {
+    width: 768px;
+    height: 2534px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    width: 735.999px;
+    height: 303.043px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .for_123 {
+    width: 231.973px;
+    height: 167.617px;
+  }
+
+  .for_4 {
+    width: 734.581px;
+    height: 116.043px;
+  }
+
+  .for_1text {
+    position: absolute;
+    top: 710px;
+    left: 51px;
+  }
+
+  .for_2text {
+    position: absolute;
+    top: 710px;
+    left: 335px;
+  }
+
+  .for_3text {
+    position: absolute;
+    top: 710px;
+    left: 596px;
+  }
+
+  .for_4text {
+    position: absolute;
+    top: 880px;
+    left: 298px;
+  }
+
+  .products {
+    width: 768px;
+    height: 1395px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas:
+      "titl1 titl1"
+      "titl2 titl2"
+      "img1 img2"
+      "img3 img4"
+      "img5 img6"
+      "button button";
+    justify-items: center;
+    align-content: center;
+  }
 }
