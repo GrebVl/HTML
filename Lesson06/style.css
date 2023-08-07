@@ -500,3 +500,142 @@
     align-content: center;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .desktop_index {
+    width: 375px;
+    height: 5367px;
+    background: #ffffff;
+  }
+
+  .Header {
+    width: 375px;
+    height: 74px;
+  }
+
+  .section_header {
+    width: 375px;
+    height: 363px;
+  }
+
+  .img_section {
+    width: 0px;
+    height: 0px;
+  }
+
+  .logo_header {
+    width: 44px;
+    height: 38px;
+  }
+
+  .img_logo_header {
+    width: 26.002px;
+    height: 26.792px;
+  }
+
+  .img_header {
+    width: 26.002px;
+    height: 26.792px;
+  }
+
+  .Button_header {
+    width: 32px;
+    height: 23px;
+    background: transparent;
+  }
+
+  .text_section {
+    width: 311px;
+    height: 70px;
+  }
+
+  .h1_text {
+    font-size: 40px;
+  }
+
+  .h2_text1,
+  .h2_text2 {
+    font-size: 20px;
+  }
+
+  .Product {
+    width: 375px;
+    height: 4800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    width: 320px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4";
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  .for_123 {
+    width: 343px;
+    height: 247px;
+  }
+
+  .for_4 {
+    width: 343px;
+    height: 111px;
+  }
+
+  .for_1text {
+    position: absolute;
+    top: 750px;
+    left: 127px;
+  }
+
+  .for_2text {
+    position: absolute;
+    top: 1050px;
+    left: 127px;
+  }
+
+  .for_3text {
+    position: absolute;
+    top: 1350px;
+    left: 127px;
+  }
+
+  .for_4text {
+    position: absolute;
+    top: 1550px;
+    left: 120px;
+  }
+
+  .products {
+    width: 375px;
+    height: 3000px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas:
+      "titl1"
+      "titl2"
+      "img1" 
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "button";
+    justify-items: center;
+    align-content: center;
+  }
+}
