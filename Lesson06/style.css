@@ -4,6 +4,12 @@
   /*border: 1px solid rebeccapurple;*/
 }
 
+.body_style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .desktop_index {
   width: 1600px;
   height: 3600px;
@@ -169,6 +175,17 @@
 
 .item-4 {
   grid-area: img4;
+  width: 1140px;
+  height: 180px;
+  background: #000;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  background: #000;
+  width: 360px;
+  height: 260px;
 }
 
 .offer {
@@ -188,11 +205,8 @@
 .for_123 {
   width: 360px;
   height: 260px;
-  background-color: rgba(33, 22, 22, 0.7);
-  filter: brightness(40%);
-  position: relative;
   text-align: center;
-  color: white;
+  opacity: 0.3;
 }
 
 .for_4 {
@@ -200,12 +214,10 @@
   height: 180px;
   flex-shrink: 0;
   background-color: rgba(33, 22, 22, 0.7);
-  filter: brightness(40%);
+  opacity: 0.3;
 }
 
-.for_1text,
-.for_2text,
-.for_3text,
+.for_123text,
 .for_4text {
   color: #fff;
   text-align: center;
@@ -216,28 +228,16 @@
   line-height: normal;
 }
 
-.for_1text {
+.for_123text {
   position: absolute;
-  top: 1030px;
-  left: 340px;
-}
-
-.for_2text {
-  position: absolute;
-  top: 1030px;
-  left: 760px;
-}
-
-.for_3text {
-  position: absolute;
-  top: 1030px;
-  left: 1145px;
+  padding-left: 120px;
+  padding-top: 110px;
 }
 
 .for_4text {
   position: absolute;
-  top: 1260px;
-  left: 715px;
+  padding-left: 490px;
+  padding-top: 70px;
 }
 
 .h_text {
@@ -647,7 +647,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .desktop_index {
     width: 768px;
-    height: 4200px;
+    height: 4500px;
     background: #ffffff;
   }
 
@@ -706,9 +706,19 @@
     width: 768px;
     height: 2534px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+  }
+
+  .item-4 {
+    width: 734.581px;
+    height: 116.043px;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    width: 231.973px;
+    height: 167.617px;
   }
 
   .offer {
@@ -729,28 +739,15 @@
     height: 116.043px;
   }
 
-  .for_1text {
-    position: absolute;
-    top: 710px;
-    left: 51px;
-  }
-
-  .for_2text {
-    position: absolute;
-    top: 710px;
-    left: 335px;
-  }
-
-  .for_3text {
-    position: absolute;
-    top: 710px;
-    left: 596px;
+  .for_123text {
+    padding-left: 50px;
+    padding-top: 65px;
   }
 
   .for_4text {
     position: absolute;
-    top: 880px;
-    left: 298px;
+    padding-left: 285px;
+    padding-top: 45px;
   }
 
   .products {
@@ -834,8 +831,10 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .desktop_index {
     width: 375px;
-    height: 6500px;
+    height: 7500px;
     background: #ffffff;
+    display: flex;
+    gap: 30px;
   }
 
   .Header {
@@ -890,11 +889,21 @@
 
   .Product {
     width: 375px;
-    height: 4800px;
+    height: 4000px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+  }
+
+  .item-4 {
+    width: 320px;
+    height: 111p;
+  }
+
+  .item-1,
+  .item-2,
+  .item-3 {
+    width: 320px;
+    height: 247px;
   }
 
   .offer {
@@ -914,37 +923,24 @@
   }
 
   .for_123 {
-    width: 343px;
+    width: 320px;
     height: 247px;
   }
 
   .for_4 {
-    width: 343px;
+    width: 320px;
     height: 111px;
   }
 
-  .for_1text {
-    position: absolute;
-    top: 750px;
-    left: 127px;
-  }
-
-  .for_2text {
-    position: absolute;
-    top: 1050px;
-    left: 127px;
-  }
-
-  .for_3text {
-    position: absolute;
-    top: 1350px;
-    left: 127px;
+  .for_123text {
+    padding-left: 60px;
+    padding-top: 85px;
   }
 
   .for_4text {
     position: absolute;
-    top: 1550px;
-    left: 120px;
+    padding-left: 65px;
+    padding-top: 85px;
   }
 
   .products {
@@ -978,7 +974,7 @@
     width: 375px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-areas: "feature1" "feature2" "feature3";
     justify-items: center;
@@ -987,11 +983,56 @@
 
   .Frame {
     width: 375px;
-    height: 610px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
-
+  
   .Frame1 {
     width: 375px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas: "feature1" "feature2";
+    justify-items: center;
+    align-content: center;
+  }
+    
+  .Frame3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-template-areas: "feature1 feature1" "feature2 feature3";
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .p_Frame1 {
+    width: 320px;
+  }
+  
+  .p_Frame2 {
+    width: 320px;
+  }
+  
+  .img_Frame1 {
+    width: 230px;
+  }
+  .img_Frame2 {
+    width: 70px;
+  }
+  
+  .Copyright {
+    width: 375px;
+    height: 160px;
+  }
+  
+  .Copyright1 {
+    width: 375px;
+    height: 160px;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 20px;
@@ -1000,30 +1041,9 @@
     justify-items: center;
     align-content: center;
   }
-
-  .Frame3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 16px;
-    grid-template-areas: "feature1" "feature2" "feature3";
-    justify-items: center;
-    align-content: center;
-  }
-
-  .Copyright {
-    width: 375px;
-    height: 143px;
-  }
-
-  .Copyright1 {
-    width: 375px;
-    height: 143px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 16px;
-    grid-template-areas: "feature1 feature2";
-    justify-items: center;
-    align-content: center;
+  
+  .img_Copyringht2 {
+    position: absolute;
+    margin: -8px -7px;
   }
 }
